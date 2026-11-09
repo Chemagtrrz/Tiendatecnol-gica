@@ -1,0 +1,89 @@
+
+.formulario {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: clamp(20px, 4vw, 38px);
+}
+
+.formulario h2 {
+    margin-top: 0;
+    font-size: clamp(1.6rem, 3vw, 2.2rem);
+}
+
+.formulario .centrado {
+    text-align: center;
+}
+
+#formulario-contacto {
+    margin-top: 24px;
+}
+
+.campo {
+    margin-bottom: 18px;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: bold;
+    color: #12345b;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+    display: block;
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #bdcbd9;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #233246;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    transition: border-color .2s, box-shadow .2s;
+}
+
+.campo textarea {
+    min-height: 140px;
+    resize: vertical;
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+    outline: none;
+    border-color: #12345b;
+    box-shadow: 0 0 0 3px rgba(53, 201, 232, .25);
+}
+
+#formulario-contacto button {
+    width: 100%;
+    margin-top: 4px;
+}
+
+.mensaje-formulario {
+    min-height: 1.5em;
+    padding: 10px 0 0;
+    color: #087044;
+    font-weight: bold;
+}
+
+.formulario small {
+    display: block;
+    margin-top: 20px;
+    color: #5b6673;
+}
+
+@media (max-width: 600px) {
+    .formulario {
+        padding: 18px;
+    }
+
+    .campo input,
+    .campo select,
+    .campo textarea {
+        font-size: 16px;
+    }
+}

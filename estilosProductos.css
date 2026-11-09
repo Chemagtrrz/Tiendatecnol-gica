@@ -1,0 +1,227 @@
+/* Configuración general */
+* {
+    box-sizing:border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #eef2f3;
+    color: #19417c;
+    margin: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #19417c;
+    color: white;
+    text-align: center;
+    padding: 22px 15px;
+}
+
+header h1 {
+    margin: 0 0 8px;
+}
+
+header h2 {
+    margin: 0 0 12px;
+    font-weight: normal;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 14px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 13px;
+    border-radius: 5px;
+}
+
+nav a:hover,
+nav a:focus {
+    background-color: #ffd166;
+    color: #19417c;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 28px 20px;
+}
+
+h2, h3 {
+    color: #19417c;
+}
+
+main > h2,
+main > .centrado {
+    text-align: center;
+}
+
+.hero {
+    text-align: center;
+    padding: 38px 20px;
+    background: linear-gradient(135deg, #dbeafe, #ffffff);
+    border-radius: 12px;
+    margin-bottom: 28px;
+}
+
+.hero h2 {
+    font-size: clamp(1.7rem, 4vw, 2.5rem);
+    margin-top: 0;
+}
+
+.boton,
+button {
+    display: inline-block;
+    background-color: #19417c;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 11px 18px;
+    font-size: 1rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.boton:hover,
+button:hover {
+    background-color: #12315e;
+}
+
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 25px;
+}
+
+.producto {
+    background-color: white;
+    width: 260px;
+    max-width: 100%;
+    padding: 16px;
+    border: 1px solid #d4dbe3;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.08);
+}
+
+.producto img {
+    width: 100%;
+    height: 165px;
+    object-fit: contain;
+    background-color: #f8fafc;
+    border-radius: 6px;
+}
+
+.producto h3 {
+    margin-bottom: 6px;
+}
+
+.producto p {
+    color: #364152;
+}
+
+.precio {
+    color: #19417c !important;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.detalle {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.08);
+}
+
+.detalle img {
+    width: 360px;
+    max-width: 100%;
+    max-height: 320px;
+    object-fit: contain;
+    background-color: #f8fafc;
+    border-radius: 8px;
+}
+
+.detalle-info {
+    flex: 1;
+    min-width: 240px;
+}
+
+.panel {
+    background: white;
+    padding: 24px;
+    margin: 18px 0;
+    border-radius: 10px;
+    border: 1px solid #d4dbe3;
+}
+
+.contacto {
+    max-width: 650px;
+    margin: 0 auto;
+    background: white;
+    padding: 24px;
+    border-radius: 10px;
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.08);
+}
+
+.contacto label {
+    display: block;
+    margin: 12px 0 5px;
+    font-weight: bold;
+}
+
+.contacto input,
+.contacto textarea,
+.contacto select {
+    display: block;
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #b7c2d0;
+    border-radius: 5px;
+    font: inherit;
+}
+
+.contacto textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+footer {
+    background-color: #19417c;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    margin-top: 25px;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media (max-width: 600px) {
+    main {
+        padding: 18px 12px;
+    }
+
+    .producto {
+        width: 100%;
+    }
+
+    .detalle {
+        padding: 16px;
+    }
+}
