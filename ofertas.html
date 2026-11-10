@@ -1,2 +1,84 @@
-<a href="ofertas.html"
-target="contenido">ofertas</a>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Productos tecnológicos en oferta.">
+    <title>Ofertas - Tienda Tecnológica</title>
+    <link rel="stylesheet" href="estilosProductos.css">
+    <link rel="stylesheet" href="estilosProducto.css">
+</head>
+<body>
+    <header>
+        <h1 class="marca">Tienda Tecnológica</h1>
+        <p class="subtitulo-header">Promociones especiales</p>
+        <nav aria-label="Navegación de la tienda">
+            <a href="tienda-tecnologica.html">Tienda Tecnológica</a>
+            <a href="index.html" target="_top">Portada</a>
+            <a href="inicio.html">Inicio</a>
+            <a href="productos.html">Productos</a>
+            <a href="ofertas.html" aria-current="page">Ofertas</a>
+            <a href="acerca.html">Acerca de</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="centrado">
+            <h2>Productos en oferta</h2>
+            <p>Aprovecha estos descuentos especiales en nuestros productos tecnológicos.</p>
+        </section>
+
+        <div class="productos">
+            <article class="producto">
+                <img src="imagenes/laptop.svg" alt="Laptop gris para estudiar y trabajar">
+                <h3>Laptop</h3>
+                <p>Laptop práctica para clases, trabajo y entretenimiento.</p>
+                <p class="precio-anterior">Precio anterior: <del>Bs. 4.800</del></p>
+                <p class="precio">Precio de oferta: Bs. 4.320</p>
+                <p><span class="descuento">-10%</span></p>
+                <button type="button" class="boton boton-detalles" data-detalles="detalle-laptop-oferta" aria-controls="detalle-laptop-oferta" aria-expanded="false">Ver detalles</button>
+                <div class="detalles-oferta" id="detalle-laptop-oferta" hidden>
+                    <p><strong>Características:</strong> memoria RAM de 8 GB, almacenamiento SSD y pantalla de alta definición. Adecuada para estudiar y realizar tareas cotidianas.</p>
+                </div>
+            </article>
+
+            <article class="producto">
+                <img src="imagenes/mouse.svg" alt="Mouse óptico para computadora">
+                <h3>Mouse</h3>
+                <p>Mouse cómodo y preciso para navegar, estudiar o jugar.</p>
+                <p class="precio-anterior">Precio anterior: <del>Bs. 100</del></p>
+                <p class="precio">Precio de oferta: Bs. 80</p>
+                <p><span class="descuento">-20%</span></p>
+                <button type="button" class="boton boton-detalles" data-detalles="detalle-mouse-oferta" aria-controls="detalle-mouse-oferta" aria-expanded="false">Ver detalles</button>
+                <div class="detalles-oferta" id="detalle-mouse-oferta" hidden>
+                    <p><strong>Características:</strong> conexión USB, sensor óptico y diseño ergonómico para facilitar el uso diario de la computadora.</p>
+                </div>
+            </article>
+
+            <article class="producto">
+                <img src="imagenes/teclado-gamer.svg" alt="Teclado gamer con iluminación">
+                <h3>Teclado Gamer</h3>
+                <p>Teclado para disfrutar videojuegos y escribir con comodidad.</p>
+                <p class="precio-anterior">Precio anterior: <del>Bs. 300</del></p>
+                <p class="precio">Precio de oferta: Bs. 240</p>
+                <p><span class="descuento">-20%</span></p>
+                <button type="button" class="boton boton-detalles" data-detalles="detalle-teclado-oferta" aria-controls="detalle-teclado-oferta" aria-expanded="false">Ver detalles</button>
+                <div class="detalles-oferta" id="detalle-teclado-oferta" hidden>
+                    <p><strong>Características:</strong> diseño gamer, teclas cómodas, conexión USB e iluminación decorativa para acompañar tus partidas.</p>
+                </div>
+            </article>
+        </div>
+
+        <p class="centrado" style="margin-top: 26px;">
+            <a class="boton boton-secundario" href="productos.html">Ver todos los productos</a>
+        </p>
+    </main>
+
+    <footer>
+        <p><strong>Tienda Tecnológica</strong> · Tecnología para tu día a día</p>
+    </footer>
+    
+    <script src="producto.js" defer></script>
+</body>
+</html>

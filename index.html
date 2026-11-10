@@ -3,32 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio - Tienda Tecnológica</title>
+    <meta name="description" content="Tienda Tecnológica: productos, ofertas y accesorios.">
+    <title>Tienda Tecnológica</title>
     <link rel="stylesheet" href="estilosProductos.css">
 </head>
 <body>
     <header>
-        <h1>Tienda Tecnológica</h1>
-        <h2>La tecnología que necesitas</h2>
-        <nav>
-            <a href="index.html">Inicio</a>
-            <a href="productos.html">Productos</a>
-            <a href="acerca.html">Acerca de</a>
-            <a href="contacto.html">Contacto</a>
+        <h1 class="marca">Tienda Tecnológica</h1>
+        <p class="subtitulo-header">Selecciona una sección para continuar</p>
+        <nav aria-label="Menú principal">
+            <a href="inicio.html" target="contenido">Inicio</a>
+            <a href="productos.html" target="contenido">Productos</a>
+            <a href="ofertas.html" target="contenido">Ofertas</a>
+            <a href="acerca.html" target="contenido">Acerca de</a>
+            <a href="contacto.html" target="contenido">Contacto</a>
         </nav>
     </header>
-    <main>
-        <section class="hero">
-            <h2>Bienvenido a Tienda Tecnológica</h2>
-            <p>Encuentra productos tecnológicos para estudiar, trabajar y disfrutar tus videojuegos.</p>
-            <a class="boton" href="productos.html">Ver nuestros productos</a>
-        </section>
-        <section class="panel">
-            <h2>¿Qué puedes encontrar?</h2>
-            <p>Tenemos laptops, mouse y teclados gamer para acompañarte en tus actividades de cada día.</p>
-            <p class="centrado"><a class="boton" href="inicio.html">Conocer nuestra tienda</a></p>
-        </section>
+
+    <main class="contenedor-marco">
+        <iframe
+            class="marco-contenido"
+            name="contenido"
+            id="contenido"
+            src="inicio.html"
+            title="Contenido de Tienda Tecnológica">
+        </iframe>
     </main>
 
+    <footer>
+        <p><strong>Tienda Tecnológica</strong> · Tecnología para tu día a día</p>
+    </footer>
+    <script src="producto.js" defer></script>
 </body>
 </html>
